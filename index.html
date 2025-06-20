@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="transition duration-500 scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aftab | Web Developer</title>
+  <meta name="description" content="Aftab - Web developer and UI engineer turning ideas into profitable products." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- AOS Scroll Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .floating {
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition duration-500">
+
+  <!-- Responsive Navbar -->
+ <header
+  class="sticky top-4 z-50 backdrop-blur-lg bg-white/70 dark:bg-gray-800/70 shadow-sm border border-gray-200 dark:border-gray-700
+  mx-auto w-full sm:max-w-[600px] h-[70px] rounded-xl px-4 flex items-center justify-between"
+>
+  <div class="flex items-center gap-4">
+    <span class="font-bold text-lg"><i data-lucide="zap"></i></span>
+    
+    <a href="#" title="Home" class="transition-transform duration-200 hover:scale-125 hover:text-blue-500">
+      <i data-lucide="home"></i>
+    </a>
+    <a href="#about" title="About" class="transition-transform duration-200 hover:scale-125 hover:text-blue-500">
+      <i data-lucide="user"></i>
+    </a>
+    <a href="#skills" title="Skills" class="transition-transform duration-200 hover:scale-125 hover:text-blue-500">
+      <i data-lucide="star"></i>
+    </a>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <a href="mailto:aftabown@email.com" title="Email" class="transition-transform duration-200 hover:scale-125 hover:text-blue-500">
+      <i data-lucide="mail"></i>
+    </a>
+    <a href="https://www.instagram.com/aftab_note/" target="_blank" title="Instagram" class="transition-transform duration-200 hover:scale-125 hover:text-pink-500">
+      <i data-lucide="instagram"></i>
+    </a>
+    <a href="https://linkedin.com" target="_blank" title="LinkedIn" class="transition-transform duration-200 hover:scale-125 hover:text-blue-700">
+      <i data-lucide="linkedin"></i>
+    </a>
+     <button
+        id="theme-toggle"
+        class="p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+        aria-label="Toggle Dark Mode"
+        type="button"
+      >
+        <i data-lucide="sun" class="dark:hidden"></i>
+        <i data-lucide="moon" class="hidden dark:inline"></i>
+      </button>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="pt-32 sm:pt-36 pb-8 text-center px-6">
+    <img
+      src="profile-portfolio.png"
+      alt="Profile Image"
+      class="rounded-full w-24 h-24 mb-6 shadow-lg floating mx-auto"
+      data-aos="fade-down"
+    />
+    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4" data-aos="fade-up">
+      Hey, I'm Aftab.<br />Engineer & Designer.
+    </h1>
+    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto mb-6" data-aos="fade-up" data-aos-delay="100">
+      Most designers can't code. Most developers can't design. I do both. <br />
+    </p>
+    <div class="flex gap-4 flex-wrap justify-center" data-aos="fade-up" data-aos-delay="200">
+      <a
+        href="https://wa.me/8801918253577?text=Hi%20Aftab%2C%20I%20want%20to%20hire%20you!"
+        class="bg-black text-white px-5 py-2 rounded-full hover:bg-gray-800 transition-transform duration-300 hover:scale-105 active:scale-95"
+        >Hire me</a
+      >
+      <span
+        class="px-5 py-2 bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 rounded-full"
+        >● Open to Opportunities</span
+      >
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="px-6 py-16 bg-gray-50 dark:bg-gray-800 rounded-xl max-w-3xl mx-auto" data-aos="fade-right">
+    <h2 class="text-2xl font-bold mb-4">About</h2>
+    <p class="mb-4">I'm Aftab. Web developer and UI engineer based in Bangladesh.</p>
+    <p class="mb-4">
+      <strong>Here's what I actually do:</strong> I take your broken interfaces and
+      make them work. Not just "look pretty" — actually function at 60fps while being
+      accessible to everyone.
+    </p>
+    <p>
+      Most designers can't code. Most developers can't design. I do both. While
+      others debate aesthetics, I'm shipping pixel-perfect interfaces that perform.
+      Accessibility isn't optional — it's standard.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="px-6 py-16 bg-white dark:bg-gray-900 max-w-3xl mx-auto" data-aos="fade-left">
+    <h2 class="text-2xl font-bold mb-8 text-center">Skills</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
+      <div class="p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <i data-lucide="code" class="mx-auto mb-2" style="width:32px; height:32px;"></i>
+        <h3 class="font-semibold mb-1">HTML & CSS</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Semantic markup & styling</p>
+      </div>
+      <div class="p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <i data-lucide="javascript" class="mx-auto mb-2" style="width:32px; height:32px;"></i>
+        <h3 class="font-semibold mb-1">JavaScript</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Dynamic and interactive UI</p>
+      </div>
+      <div class="p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <i data-lucide="feather" class="mx-auto mb-2" style="width:32px; height:32px;"></i>
+        <h3 class="font-semibold mb-1">Tailwind CSS</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Utility-first styling</p>
+      </div>
+      <div class="p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <i data-lucide="git-branch" class="mx-auto mb-2" style="width:32px; height:32px;"></i>
+        <h3 class="font-semibold mb-1">Git & GitHub</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Version control</p>
+      </div>
+      <div class="p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <i data-lucide="smartphone" class="mx-auto mb-2" style="width:32px; height:32px;"></i>
+        <h3 class="font-semibold mb-1">Responsive Design</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Mobile-first layouts</p>
+      </div>
+      <div class="p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <i data-lucide="shield" class="mx-auto mb-2" style="width:32px; height:32px;"></i>
+        <h3 class="font-semibold mb-1">Accessibility</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Inclusive experiences</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer
+    class="text-center p-6 bg-white dark:bg-gray-900 text-gray-500 dark:text-gray-400 text-sm"
+  >
+    &copy; 2025 Aftab. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    const htmlEl = document.documentElement;
+    const themeToggle = document.getElementById('theme-toggle');
+    const darkPref = localStorage.getItem('theme') === 'dark';
+    if (darkPref) htmlEl.classList.add('dark');
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        htmlEl.classList.toggle('dark');
+        localStorage.setItem('theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
+        lucide.createIcons();
+      });
+    }
+
+    AOS.init({ duration: 800, once: true });
+    lucide.createIcons();
+  </script>
+</body>
+</html>
